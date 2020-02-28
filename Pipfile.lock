@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "6a2ff77355a71d23114c328595d671b99409791ae151dec6ca0b12b2cfc920b4"
+            "sha256": "396a7a3680e247cfdcc346d9d3bcdd5ac982ec0ceed507699adcf57429726792"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -50,6 +50,9 @@
             ],
             "index": "pypi",
             "version": "==0.6.2"
+        },
+        "find-store": {
+            "path": "."
         },
         "future": {
             "hashes": [

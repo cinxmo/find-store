@@ -35,3 +35,9 @@ $ find_store --address="<address>" [--units=(mi|km)] [--output=text|json]
 $ find_store --zip=<zip>
 $ find_store --zip=<zip> [--units=(mi|km)] [--output=text|json]
 ```
+
+### 6. Results
+The closest store's name, address, and distance are printed to the console.
+A file is automatically saved as `closest_store.txt` unless output is specified as json.
+
+## Creating the Application

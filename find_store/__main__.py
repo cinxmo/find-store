@@ -79,7 +79,7 @@ def main():
     # convert to latitude, longitude
     location = zip if zip else address
     location = geocoder.google(location)
-    longitude, latitude = location.latlng
+    latitude, longitude = location.latlng
 
     # find closest store
     closest_stores = get_closest_stores(latitude, longitude)
@@ -96,7 +96,7 @@ def main():
     distance = closest_store["Distance"]
 
     # print information to console
-    print(f"The closest store is {store_name} at {address}. You are {distance} {units} away from the store.")
+    print(f"The closest store is {store_name} at {address}. You are {round(distance, 2)} {units} away from the store.")
 
     # save to file
     if output:
