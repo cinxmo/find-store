@@ -40,4 +40,8 @@ $ find_store --zip=<zip> [--units=(mi|km)] [--output=text|json]
 The closest store's name, address, and distance are printed to the console.
 A file is automatically saved as `closest_store.txt` unless output is specified as json.
 
-## Creating the Application
+## Run tests 
+```bash
+$ pipenv install --dev
+$ pytest
+```
