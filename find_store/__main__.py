@@ -29,7 +29,7 @@ import geocoder
 import pandas as pd
 
 from docopt import docopt
-from .util import verify_zip, convert_mi_to_km
+from .util import valid_zip, convert_mi_to_km
 
 
 def get_distance(lat1, lon1, lat2, lon2):
@@ -71,10 +71,10 @@ def main():
     output = arguments["--output"]
 
     # verify zip
-    valid_zip = verify_zip(zip)
-    if zip and not valid_zip:
-        print(f"Please verify that your zip code input is valid. You've inputted {zip}")
-        return
+    if zip:
+        if not valid_zip(zip):
+            print(f"Please verify that your zip code input is valid. You've inputted {zip}")
+            return
 
     # convert to latitude, longitude
     location = zip if zip else address

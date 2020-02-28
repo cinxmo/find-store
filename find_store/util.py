@@ -1,7 +1,7 @@
 import re
 
 
-def verify_zip(zip):
+def valid_zip(zip):
     """
     :param zip: zip code to be verified
     :return: boolean - True if it is a valid zip code, False otherwise
