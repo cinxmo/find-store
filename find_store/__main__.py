@@ -74,6 +74,7 @@ def main():
     valid_zip = verify_zip(zip)
     if zip and not valid_zip:
         print(f"Please verify that your zip code input is valid. You've inputted {zip}")
+        return
 
     # convert to latitude, longitude
     location = zip if zip else address
@@ -95,7 +96,7 @@ def main():
     distance = closest_store["Distance"]
 
     # print information to console
-    print(f"The closest store is {store_name} at {address}. You are distance {distance} {units} away from the store.")
+    print(f"The closest store is {store_name} at {address}. You are {distance} {units} away from the store.")
 
     # save to file
     if output:
