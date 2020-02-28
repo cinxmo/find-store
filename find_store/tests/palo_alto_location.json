@@ -1,0 +1,116 @@
+{
+    "accuracy": "APPROXIMATE",
+    "address": "Palo Alto, CA 94305, USA",
+    "bbox": {
+        "northeast": [
+            37.44363,
+            -122.1494501
+        ],
+        "southwest": [
+            37.382743,
+            -122.194849
+        ]
+    },
+    "city": "Palo Alto",
+    "confidence": 5,
+    "country": "US",
+    "lat": 37.4135757,
+    "lng": -122.1689284,
+    "ok": true,
+    "place": "ChIJjTG5QdS6j4ARKPHsBmylXH8",
+    "postal": "94305",
+    "quality": "postal_code",
+    "raw": {
+        "address_components": [
+            {
+                "long_name": "94305",
+                "short_name": "94305",
+                "types": [
+                    "postal_code"
+                ]
+            },
+            {
+                "long_name": "Palo Alto",
+                "short_name": "Palo Alto",
+                "types": [
+                    "locality",
+                    "political"
+                ]
+            },
+            {
+                "long_name": "California",
+                "short_name": "CA",
+                "types": [
+                    "administrative_area_level_1",
+                    "political"
+                ]
+            },
+            {
+                "long_name": "United States",
+                "short_name": "US",
+                "types": [
+                    "country",
+                    "political"
+                ]
+            }
+        ],
+        "formatted_address": "Palo Alto, CA 94305, USA",
+        "geometry": {
+            "bounds": {
+                "northeast": {
+                    "lat": 37.44363,
+                    "lng": -122.1494501
+                },
+                "southwest": {
+                    "lat": 37.382743,
+                    "lng": -122.194849
+                }
+            },
+            "location": {
+                "lat": 37.4135757,
+                "lng": -122.1689284
+            },
+            "location_type": "APPROXIMATE",
+            "viewport": {
+                "northeast": {
+                    "lat": 37.44363,
+                    "lng": -122.1494501
+                },
+                "southwest": {
+                    "lat": 37.382743,
+                    "lng": -122.194849
+                }
+            }
+        },
+        "place_id": "ChIJjTG5QdS6j4ARKPHsBmylXH8",
+        "postcode_localities": [
+            "Palo Alto",
+            "Stanford"
+        ],
+        "types": [
+            "postal_code"
+        ],
+        "postal_code": {
+            "long_name": "94305",
+            "short_name": "94305"
+        },
+        "locality": {
+            "long_name": "Palo Alto",
+            "short_name": "Palo Alto"
+        },
+        "political": {
+            "long_name": "United States",
+            "short_name": "US"
+        },
+        "administrative_area_level_1": {
+            "long_name": "California",
+            "short_name": "CA"
+        },
+        "country": {
+            "long_name": "United States",
+            "short_name": "US"
+        }
+    },
+    "state": "CA",
+    "status": "OK"
+}

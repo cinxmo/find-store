@@ -1,0 +1,16 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = "*"
+
+[packages]
+docopt = "==0.6.2"
+packaging = "*"
+pandas = "*"
+geocoder = "*"
+
+[requires]
+python_version = "3.7"
