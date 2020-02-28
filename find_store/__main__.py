@@ -93,10 +93,10 @@ def main():
     address = ", ".join(
         [closest_store["Address"], closest_store["City"], closest_store["State"], closest_store["Zip Code"]]
     )
-    distance = closest_store["Distance"]
+    distance = round(closest_store["Distance"], 2)
 
     # print information to console
-    print(f"The closest store is {store_name} at {address}. You are {round(distance, 2)} {units} away from the store.")
+    print(f"The closest store is {store_name} at {address}. You are {distance} {units} away from the store.")
 
     # save to file
     if output:
