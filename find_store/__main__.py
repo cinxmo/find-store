@@ -86,7 +86,7 @@ def main():
     # get first row if multiple rows appear
     closest_store = closest_stores.iloc[0]
     if units == "km":
-        # distance defaulted to km - covert to mi
+        # distance defaulted to mi - covert to km
         closest_store.at['Distance'] = convert_mi_to_km(closest_store['Distance'])
 
     store_name = closest_store["Store Name"]
