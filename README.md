@@ -10,7 +10,7 @@
 ### 1. Clone repo
 ```bash
 $ git clone git@github.com:cinxmo/find-store.git
-$ cd find_store/
+$ cd find-store/
 ```
 ### 2. Install dependencies
 ```bash
