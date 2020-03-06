@@ -39,7 +39,7 @@ def get_distance(lat1, lon1, lat2, lon2):
     :param lon1: longitude of 1st location
     :param lat2: latitude of 2nd location
     :param lon2: longitude of 2nd location
-    :return: distance in km
+    :return: distance in mi
     """
     r = 3958.8  # radius of earth in miles
     p = 0.017453292519943295
