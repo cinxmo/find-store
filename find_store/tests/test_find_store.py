@@ -14,15 +14,15 @@ def palo_alto_lat_long():
 def test_verify_zip():
     # test bad zip
     bad_zip = "3333"  # only 4 digits
-    assert util.verify_zip(bad_zip) is False
+    assert util.valid_zip(bad_zip) is False
 
     # test good zip
     good_zip = "94305"
-    assert util.verify_zip(good_zip) is True
+    assert util.valid_zip(good_zip) is True
 
     # test good zip+4
     good_zip = "94305-1000"
-    assert util.verify_zip(good_zip) is True
+    assert util.valid_zip(good_zip) is True
 
 
 def test_get_closest_store(palo_alto_lat_long):

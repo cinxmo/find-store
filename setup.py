@@ -8,7 +8,7 @@ setup(
     packages=['find_store'],
     entry_points={
         'console_scripts': [
-            'find_store = find_store.__main__:main'
+            'find_store = find_store.entry:main'
         ]
     },
     description='Command Line Application for Finding Nearest Store',

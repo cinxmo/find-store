@@ -11,7 +11,7 @@ docopt = "==0.6.2"
 packaging = "*"
 pandas = "*"
 geocoder = "*"
-find-store = {path = "."}
+find-store = {path = ".", editable = "${DEBUG}"}
 
 [requires]
 python_version = "3.7"
