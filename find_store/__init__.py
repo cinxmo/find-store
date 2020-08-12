@@ -1,2 +1,2 @@
-from .__main__ import *
+from .entry import *
 from .util import *

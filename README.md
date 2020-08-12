@@ -12,23 +12,23 @@
 $ git clone git@github.com:cinxmo/find-store.git
 $ cd find-store/
 ```
-### 2. Install dependencies
+
+### 2. Set environment variables
+At the root directory, create an `.env` file and set 
+```
+GOOGLE_API_KEY=<Secret API Key>
+DEBUG=true
+```
+Note: setting DEBUG to false means that the package is not editable (changes to .py modules in find_store after the 
+initial install will NOT be reflected)
+
+### 3. Install app and dependencies
 ```bash
-$ pipenv install
 $ pipenv shell
+$ pipenv install
 ```
 
-### 3. Export API key to environment variable
-```bash
-$ export GOOGLE_API_KEY=<Secret API Key>
-```
-
-### 4. Install Application
-```bash
-$ pipenv install .
-```
-
-### 5. Run Application and Usage
+### 4. Run Application and Usage
 ```bash
 $ find_store --address="<address>"
 $ find_store --address="<address>" [--units=(mi|km)] [--output=text|json]
@@ -36,7 +36,7 @@ $ find_store --zip=<zip>
 $ find_store --zip=<zip> [--units=(mi|km)] [--output=text|json]
 ```
 
-### 6. Results
+### 5. Results
 The closest store's name, address, and distance are printed to the console.
 A file is automatically saved as `closest_store.txt` unless output is specified as json.
 
